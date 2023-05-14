@@ -1,0 +1,49 @@
+<%-include('header')-%>
+
+<section class="vh-100">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card shadow-6-strong">
+          <div class="card-body p-5 text-center">
+            <h1
+              class="mb-5"
+              id="log"
+              style="
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                  sans-serif;
+              "
+            >
+              Quote
+            </h1>
+            <form action="/activitysubmit" method="post">
+              <!--  Message input -->
+              <div class="form-outline mb-4">
+                <textarea
+                  class="form-control"
+                  id="form4Example3"
+                  rows="4"
+                  name="message"
+                ></textarea>
+                <label class="form-label" for="form4Example3">Message</label>
+              </div>
+
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-primary btn-block mb-4">
+                Add
+              </button>
+            </form>
+            <hr class="my-4" />
+            <a href="/login">
+              <button class="btn btn-primary btn-lg btn-block" type="submit">
+                Back To Dashboard
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%-include('footer')-%>

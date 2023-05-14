@@ -1,0 +1,102 @@
+<%-include('header')-%>
+
+<section
+  class="vh-100"
+  style="
+    background: linear-gradient(
+      to right,
+      rgba(254, 173, 166, 0.5),
+      rgba(245, 239, 239, 0.5)
+    );
+  "
+>
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div
+          class="card shadow-2-strong"
+          style="
+            border-radius: 1rem;
+            background: linear-gradient(
+              to right,
+              rgba(64, 240, 240, 0.5),
+              rgba(51, 8, 103, 0.5)
+            );
+          "
+        >
+      
+        <!--------old form ---------->
+
+
+          <div class="card-body p-5 text-center">
+            <h3 class="mb-5" id="log">REGISTER FORM</h3>
+            <form action="/submit" method="post">
+              <div class="form-outline mb-4">
+                <input
+                  type="text"
+                  id="typePasswordX-2"
+                  class="form-control form-control-lg"
+                  style="background: transparent"
+                  name="name"
+                  required="true"
+                />
+                <label class="form-label" for="typePasswordX-2">Username</label>
+              </div>
+              <div class="form-outline mb-4">
+                <input
+                  type="email"
+                  id="typeEmailX-2"
+                  class="form-control form-control-lg"
+                  style="background: transparent"
+                  name="email"
+                  required="true"
+                />
+                <label class="form-label" for="typeEmailX-2">Email</label>
+              </div>
+
+              <div class="form-outline mb-4">
+                <input
+                  type="password"
+                  id="typePasswordX-2"
+                  class="form-control form-control-lg"
+                  style="background: transparent"
+                  name="password"
+                  required="true"
+                />
+                <label class="form-label" for="typePasswordX-2">Password</label>
+              </div>
+
+              <div class="form-outline mb-4">
+                <input
+                  type="password"
+                  id="typePasswordX-2"
+                  class="form-control form-control-lg"
+                  style="background: transparent"
+                  name="cpassword"
+                  required="true"
+                />
+                <label class="form-label" for="typePasswordX-2"
+                  >Confirm Password</label
+                >
+              </div>
+              
+              <button class="btn btn-primary btn-lg btn-block" type="submit">
+                REGISTER
+              </button>
+            </form>
+            <hr class="my-4" />
+            <a href="/login"
+              ><button class="btn btn-primary btn-lg btn-block" type="submit">
+                LOGIN
+              </button></a
+            >
+          </div> 
+
+          <!----------old form end ------>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%-include('footer')-%>
